@@ -18,7 +18,8 @@
 // by Cyrille Fauvel - Autodesk Developer Network (ADN)
 //
 var crypto =require ('crypto') ;
-
+const dotenv = require('dotenv');
+dotenv.config();
 var config ={
 	credentials: {
 		// Replace placeholder below by the Consumer Key and Consumer Secret you got from
@@ -30,7 +31,7 @@ var config ={
 	},
 	apiEndpoint: 'developer.api.autodesk.com',
 
-	bucket: 'extract-autodesk-io-2017',
+	bucket: '3dviewerbucket01',
 	mailTo: '',
 	domain: process.env.NODE_ENV === 'production' ? 'https://extract.autodesk.io/' : 'http://localhost:3000/',
 

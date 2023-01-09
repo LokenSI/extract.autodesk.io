@@ -45,6 +45,7 @@
 		"bower": "*",
 		"connect-multiparty": "*",
 		"decompress-response": "^3.3.0",
+		"dotenv": "^16.0.3",
 		"ejs": "*",
 		"express": "*",
 		"forge-apis": "*",
@@ -58,11 +59,10 @@
 		"unirest": "*"
 	},
 	"devDependencies": {
+		"chai": "*",
+		"expect.js": "*",
 		"mocha": "*",
 		"should": "*",
-		"supertest": "*",
-		"chai": "*",
-		"expect.js": "*"
-	},
-	"optionalDependencies": {}
+		"supertest": "*"
+	}
 }

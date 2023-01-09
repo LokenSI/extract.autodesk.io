@@ -50,9 +50,12 @@ var utils ={
 	writeFile: function (filename, content, enc, bRaw) {
 		return (new Promise (function (fulfill, reject) {
 			var pathname =path.dirname (filename) ;
+			console.log("writefile")
 			utils.mkdirp (pathname)
-				.then (function (pathname) {
+			console.log("success")
+				.then (function () {
 					fs.writeFile (filename, !bRaw && typeof content !== 'string' ? JSON.stringify (content) : content, enc, function (err) {
+						console.log("ongoing")
 						if ( err )
 							reject (err) ;
 						else
